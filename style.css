@@ -3,34 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
-.parda{
+.curtain{
     width: 100%;
     height: 100vh;
     position: relative;
 }
-.parda::before{
+.curtain::before{
     content: " ";
-    width: 100%;
+    width: 50%;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: 0.4s;
-    background-color: aquamarine;
-}
-.parda::after{
-    content: " ";
-    width: 100%;
-    height: 100vh ;
     position: absolute;
     bottom: 0;
     left: 0;
+    transition: 0.4s;
+    background-color: olive;
+}
+.curtain::after{
+    content: " ";
+    width: 50%;
+    height: 100vh ;
+    position: absolute;
+    bottom: 0;
     right: 0;
     transition: 0.4s;
-    background-color: aquamarine;
+    background-color: olive;
 }
-.parda:hover::before,
-.parda:hover::after{
-    height: 0;
+.curtain:hover::before,
+.curtain:hover::after{
+    width: 0;
 }
